@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfApp1.FrmAnaSayfa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="FrmAnaSayfa" Height="400" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Mağaza Ürün Yönetim Paneli" HorizontalAlignment="Center" VerticalAlignment="Top" Width="600" Height="70" FontSize="40" FontWeight="Bold" Margin="20,32,0,0"></Label>
+        <Button Name="btnKategori" Click="btnKategori_Click" Width="200" Height="100" BorderThickness="5" BorderBrush="CornflowerBlue" Margin="0,30,500,0" FontSize="18" FontWeight="Bold">Kategori İşlemleri</Button>
+        <Button Name="btnUrun" Click="btnUrun_Click" Width="200" Height="100" BorderThickness="5" BorderBrush="CornflowerBlue" Margin="0,30,0,0" FontSize="18" FontWeight="Bold">Ürün İşlemleri</Button>
+        <Button Name="btnIstatistikler" Click="btnIstatistikler_Click" Width="200" Height="100" BorderThickness="5" BorderBrush="CornflowerBlue" Margin="500,30,0,0" FontSize="18" FontWeight="Bold">İstatistikler</Button>
+    </Grid>
+</Window>

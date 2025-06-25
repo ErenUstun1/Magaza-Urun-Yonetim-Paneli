@@ -1,0 +1,67 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="570" Width="510" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="230"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="270"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0">Ürün ID:</Label>
+            <Label Grid.Row="1">Ürün Ad:</Label>
+            <Label Grid.Row="2">Marka:</Label>
+            <Label Grid.Row="3">Stok Sayısı:</Label>
+            <Label Grid.Row="4">Fiyat:</Label>
+            <Label Grid.Row="5">Durum:</Label>
+            <Label Grid.Row="6">Kategori:</Label>
+            <TextBox Grid.Row="0" Grid.Column="1" Name="txtUrunId" Margin="3"></TextBox>
+            <TextBox Grid.Row="1" Grid.Column="1" Name="txtUrunAd" Margin="3"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="1" Name="txtMarka" Margin="3"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="1" Name="txtStokSayisi" Margin="3"></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="1" Name="txtFiyat" Margin="3"></TextBox>
+            <TextBox Grid.Row="5" Grid.Column="1" Name="txtDurum" Margin="3"></TextBox>
+            <TextBox Grid.Row="6" Grid.Column="1" Name="txtKategori" Margin="3"></TextBox>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Button Name="btnTemizle" Grid.Column="0" Margin="2" Click="btnTemizle_Click" Height="45">Temizle</Button>
+            <Button Name="btnKaydet" Grid.Column="1" Margin="2" Click="btnKaydet_Click" Height="45">Kaydet</Button>
+            <Button Name="btnSil" Grid.Column="2" Margin="2" Click="btnSil_Click" Height="45">Sil</Button>
+            <Button Name="btnGuncelle" Grid.Column="3" Margin="2" Click="btnGuncelle_Click" Height="45">Güncelle</Button>
+            <Button Name="btnCikis" Grid.Column="4" Margin="2" Click="btnCikis_Click" Height="45">Çıkış</Button>
+        </Grid>
+        <DataGrid Grid.Row="2" Name="dgGoster"  Margin="2" SelectionChanged="dgGoster_SelectionChanged">
+
+        </DataGrid>
+
+        
+
+    </Grid>
+</Window>

@@ -1,0 +1,72 @@
+﻿<Window x:Class="WpfApp1.FrmIstatistik"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="FrmIstatistik" Height="650" Width="700">
+    <Grid Height="650" VerticalAlignment="Top">
+        <GroupBox Header="Toplam Kategori Sayısı" Margin="19,10,450,513" Padding="10" FontSize="15" FontWeight="Bold" Height="120" Background="#FFD4F1F4">
+            <StackPanel>
+                <TextBlock Margin="5" FontSize="20" Name="LblKategoriSayısı" Height="56">0</TextBlock>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Toplam Ürün Sayısı" Margin="255,10,223,513" Padding="10" FontSize="15" FontWeight="Bold"  Height="120" Background="#FFD4F1F4">
+            <StackPanel>
+                <TextBlock Margin="5" FontSize="20" x:Name="LblToplamÜrün" Height="64"><Run Text="0"/></TextBlock>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Aktif Müşteri Sayısı" Margin="482,10,10,513" Padding="10" FontSize="15" FontWeight="Bold"  Height="120"  Background="#FFD4F1F4">
+            <StackPanel>
+                <TextBlock Margin="5" FontSize="20" x:Name="LblAktifMüşteri" Height="64"><Run Text="0"/></TextBlock>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Pasif Müşteri Sayısı" Margin="24,153,454,377" Padding="10" FontSize="15" FontWeight="Bold"  Height="120" Background="#75E6DA">
+            <StackPanel>
+                <TextBlock Margin="5" FontSize="20" x:Name="LblPasifMüşteri" Height="64"><Run Text="0"/></TextBlock>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Toplam Stok" Margin="482,153,10,377" Padding="10" FontSize="15" FontWeight="Bold"  Height="120" Background="#75E6DA">
+            <StackPanel>
+                <TextBlock Margin="5" FontSize="20" x:Name="LblToplamStok" Height="64"><Run Text="0"/></TextBlock>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="En Yüksek Fiyatlı Ürün" Margin="19,297,450,233" Padding="10" FontSize="15" FontWeight="Bold"  Height="120" Background="#189AB4">
+            <StackPanel>
+                <TextBlock Margin="5" FontSize="20" x:Name="LblEnYüksekFiyatlıÜrün" Height="56"><Run Text="0"/></TextBlock>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="En Düşük Fiyatlı Ürün" Margin="255,297,223,233" Padding="10" FontSize="15" FontWeight="Bold"  Height="120" Background="#189AB4">
+            <StackPanel>
+                <TextBlock Margin="5" FontSize="20" x:Name="LblEnDüşükFiyatlıÜrün" Height="64"><Run Text="0"/></TextBlock>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Şehir Sayısı" Margin="482,297,10,233" Padding="10" FontSize="15" FontWeight="Bold"  Height="120" Background="#189AB4">
+            <StackPanel>
+                <TextBlock Margin="5" FontSize="20" x:Name="LblŞehir" Height="64"><Run Text="0"/></TextBlock>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Kasadaki Tutar" Margin="19,446,450,84" Padding="10" FontSize="15" FontWeight="Bold"  Height="120" Background="#FFD4F1F4">
+            <StackPanel>
+                <TextBlock Margin="5" FontSize="20" x:Name="LblKasadakiTutar" Height="56"><Run Text="0"/></TextBlock>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Beyaz Eşya Sayısı" Margin="250,153,218,377" Padding="10" FontSize="15" FontWeight="Bold" Height="120" Background="#75E6DA">
+            <StackPanel>
+                <TextBlock Margin="5" FontSize="20" x:Name="LblBeyazEşya" Height="56"><Run Text="0"/></TextBlock>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="En Fazla Ürünlü Marka" Margin="255,446,223,84" Padding="10" FontSize="15" FontWeight="Bold"  Height="120" Background="#FFD4F1F4">
+            <StackPanel>
+                <TextBlock Margin="5" FontSize="20" x:Name="LblEnFazlaÜrünlüMarka" Height="64"><Run Text="0"/></TextBlock>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Toplam Buzdolabı Sayısı" Margin="482,446,10,84" Padding="10" FontSize="15" FontWeight="Bold"  Height="120" Background="#FFD4F1F4">
+            <StackPanel>
+                <TextBlock Margin="5" FontSize="20" x:Name="LblToplamBuzdolabıSayısı" Height="64"><Run Text="0"/></TextBlock>
+            </StackPanel>
+        </GroupBox>
+
+    </Grid>
+</Window>

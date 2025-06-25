@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApp1.FrmGiris"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="FrmGiris" Height="200" Width="500" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Margin="10,25,-10,25" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0">Kullanıcı Adı:</Label>
+            <Label Grid.Row="1">Kullanıcı Şifresi:</Label>
+            <TextBox Grid.Row="0" Grid.Column="1" Name="txtKullaniciAdi" Margin="3"></TextBox>
+            <TextBox Grid.Row="1" Grid.Column="1" Name="txtKullaniciSifre" Margin="3"></TextBox>
+        </Grid>
+        <Grid Grid.Row="1" HorizontalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" />
+            </Grid.ColumnDefinitions>
+            <Button Name="btnTemizle" Grid.Column="0" Margin="40,33,-36,-28" Click="btnTemizle_Click" Height="45" >Giriş yap</Button>
+        </Grid>
+
+    </Grid>
+</Window>
